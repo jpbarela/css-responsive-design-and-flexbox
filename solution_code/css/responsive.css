@@ -1,0 +1,58 @@
+body {
+	color: blue;
+}
+
+h1 {
+	text-align: center;
+}
+
+.course-summary {
+	background: blue;
+	color: white;
+	padding: 1em;
+}
+
+.image-div {
+	background-image: url('../assets/full_stack_walkers.jpg');
+	background-repeat: no-repeat;
+	height: 168px;
+	background-size: 100% 100%;
+	padding: 1em;
+}
+
+.mobile-only {
+	display: block;
+	text-align: center;
+}
+
+.responsive-div {
+	width: 100%;
+	margin: .5em 0em;
+}
+
+@media (min-width: 40em) {
+	.course-summary {
+		background: red;
+		color: black;
+	}
+
+	.image-div {
+		background-image: url('../assets/full_stack_walkers.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%
+	}	
+
+	.mobile-only {
+		display: none;
+	}
+
+	.responsive-div {
+		width: 44.5%;
+	}
+
+	.responsive-hero {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+}
